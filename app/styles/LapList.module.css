@@ -1,0 +1,151 @@
+/* Lap List container */
+.laps {
+    background-color: #34495e; /* Darker background */
+    border-radius: 10px;
+    flex-direction: column;
+    padding: 20px;
+    width: 100%;
+    max-width: 350px;
+    margin-top: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+    overflow-y: auto;
+}
+
+/* Header styling for Lap List */
+.laps h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #ecf0f1; /* Light color for header */
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+/* List styling */
+.laps ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Each lap item styling */
+.laps li {
+    font-size: 1.1rem;
+    padding: 8px 0;
+    border-bottom: 1px solid #7f8c8d;
+    color: #ecf0f1; /* Light text color */
+    display: flex;
+    flex-direction: column; /* Stack lap time and lap details vertically */
+    transition: background-color 0.3s ease, color 0.3s ease-in-out;
+    white-space: nowrap; /* Prevent text wrapping */
+}
+
+/* Remove the bottom border for the last lap item */
+.laps li:last-child {
+    border-bottom: none;
+}
+
+/* Lap time styling */
+.lapTime {
+    font-weight: bold;
+    color: #e74c3c; /* Red for lap time */
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+/* Lap number styling */
+.lapNumber {
+    font-weight: bold;
+    color: #f39c12; /* Golden color for lap number */
+    text-align: center; /* Align to the center */
+    font-size: 1rem;
+}
+
+/* Flex container for each lap item info */
+.lapInfo,
+.lapDetails {
+    display: flex;
+    justify-content: center; /* Center the items */
+    width: 100%;
+}
+
+/* Hover effect for lap items */
+.laps li:hover {
+    background-color: #16a085; /* Cool hover background */
+    color: #ffffff; /* Text color turns white on hover */
+}
+
+/* Phones and smaller devices (including Surface Duo in portrait mode) */
+@media (max-width: 480px) {
+    .laps {
+        max-width: 100%; /* Full width for small devices */
+        padding: 15px; /* Compact padding */
+    }
+
+    .laps h3 {
+        font-size: 1.2rem; /* Smaller header font size */
+    }
+
+    .laps li {
+        font-size: 1rem; /* Compact font size for list items */
+        padding: 6px 0; /* Reduced padding for items */
+    }
+
+    .lapTime {
+        font-size: 1rem; /* Smaller lap time font */
+    }
+
+    .lapNumber {
+        font-size: 0.9rem; /* Smaller lap number font */
+    }
+}
+
+/* Tablets (portrait and smaller tablets, including iPad) */
+@media (min-width: 481px) and (max-width: 768px) {
+    .laps {
+        max-width: 90%; /* Use available screen space with slight margin */
+        padding: 18px; /* Adjusted padding for tablets */
+    }
+
+    .laps h3 {
+        font-size: 1.4rem; /* Slightly larger header font */
+    }
+
+    .laps li {
+        font-size: 1.1rem; /* Larger font size for better readability */
+        padding: 8px 0; /* Increased spacing between items */
+    }
+
+    .lapTime {
+        font-size: 1.1rem; /* Adjusted font size for lap times */
+    }
+
+    .lapNumber {
+        font-size: 1rem; /* Font size matches lap items */
+    }
+}
+
+/* Tablets (landscape, including iPad Pro and Surface Duo landscape mode) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .laps {
+        max-width: 80%; /* Take up less width on landscape tablets */
+        padding: 20px; /* Balanced padding for wider screens */
+    }
+
+    .laps h3 {
+        font-size: 1.5rem; /* Slightly larger font size for headings */
+    }
+
+    .laps li {
+        font-size: 1.2rem; /* More prominent font size for lap items */
+        padding: 10px 0; /* Increased spacing for clarity */
+    }
+
+    .lapTime {
+        font-size: 1.2rem; /* Enhanced font for lap times */
+    }
+
+    .lapNumber {
+        font-size: 1.1rem; /* Consistent font size with lap items */
+    }
+}
