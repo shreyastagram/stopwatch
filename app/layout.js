@@ -1,4 +1,5 @@
 import { Geist, Geist_Mono } from 'next/font/google';
+import Image from 'next/image';
 import './globals.css'; // Global styles for the app
 import styles from './styles/RootLayout.module.css'; // Import your CSS module
 
@@ -27,6 +28,23 @@ export default function RootLayout({ children }) {
           {children}
         </main>
         <footer className={styles.footer}>
+          <div className={styles.footerContent}>
+            <a 
+              href="https://github.com/shreyastagram/stopwatch" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className={styles.githubLink}
+            >
+              <Image 
+                src="/github-logo.png" 
+                alt="GitHub" 
+                width={24} 
+                height={24} 
+                className={styles.githubImage}
+              />
+              <span>Preview Code</span>
+            </a>
+          </div>
           <p>© 2025 Stopwatch App By Shreyash Borkar</p>
         </footer>
       </body>

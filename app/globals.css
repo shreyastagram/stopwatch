@@ -175,38 +175,3 @@ input:focus, textarea:focus {
 }
 
 /* Tablets (portrait and small screens) */
-@media (min-width: 481px) and (max-width: 768px) {
-  body {
-      font-size: 15px; /* Slightly larger text */
-      line-height: 1.6; /* Comfortable line spacing */
-  }
-
-  .container {
-      padding: 0 20px; /* Increased padding for tablets */
-  }
-
-  .wrapper {
-      padding: 20px; /* Balanced content padding */
-  }
-
-  h1, h2, h3, h4, h5, h6 {
-      font-size: 1.5rem; /* Adjusted header sizes */
-      margin: 12px 0; /* Consistent spacing for headers */
-  }
-
-  p {
-      font-size: 1rem; /* Balanced paragraph size */
-      margin: 10px 0; /* Slightly larger spacing */
-  }
-
-  button {
-      padding: 10px 20px; /* Larger buttons */
-      font-size: 1rem; /* Adjust text size */
-  }
-
-  input, textarea {
-      font-size: 1rem; /* Balanced input text size */
-      padding: 10px; /* Comfortable input padding */
-  }
-}
-
